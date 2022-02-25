@@ -55,15 +55,15 @@ public class Mindler_Partner {
 
 		Thread.sleep(2000);
 		WebElement SiteAddress = driver.findElement(By.xpath("//input[@placeholder='Site address']"));
-		WebElement UploadLogo = driver.findElement(By.xpath("//a[contains(text(),'Upload Logo')]"));
+		//WebElement UploadLogo = driver.findElement(By.xpath("//a[contains(text(),'Upload Logo')]"));
 		WebElement SubmitBtn = driver.findElement(By.xpath("//button[contains(text(),'Submit')]"));
 
 		SiteAddress.click();
 		SiteAddress.sendKeys(TempFirstName + faker.number().digits(4));
-		UploadLogo.click();
-		Thread.sleep(5000);
-		Runtime.getRuntime().exec("C:\\Users\\Taxmann Technologies\\Documents\\AutoIT\\Open.exe");
-		Thread.sleep(5000);
+		//UploadLogo.click();
+		//Thread.sleep(5000);
+		//Runtime.getRuntime().exec("C:\\Users\\Taxmann Technologies\\Documents\\AutoIT\\Open.exe");
+		//Thread.sleep(5000);
 		SubmitBtn.click();
 
 		Thread.sleep(2000);
