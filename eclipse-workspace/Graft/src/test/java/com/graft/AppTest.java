@@ -1,38 +1,23 @@
 package com.graft;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.testng.annotations.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest extends BaseTest{
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+	@Test
+	public void Register() throws InterruptedException
+	{
+		StorePage storePage=new HomePage(driver).
+				load().
+				navigateToStoreMenuLink().
+				search("Blue"); 
+		Assert.assertEquals(storePage.getTitle(),"Search result:“Blue Shoes”");
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
-}
+		storePage.clickaddToCartBtn("Blue Shoes");
+		Thread.sleep(5000);	
+		CartPage cartPage=storePage.clickViewCart();
+		Assert.assertEquals(cartPage.getProductName(),"Search result:“Blue Shoes”");
+	
+	}
+
+
