@@ -9,6 +9,8 @@ public class DriverManager {
 	{
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://gusqa.mindler.com/");
 		return driver;
    
 	}
