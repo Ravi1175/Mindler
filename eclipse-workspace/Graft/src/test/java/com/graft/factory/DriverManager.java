@@ -8,7 +8,6 @@ public class DriverManager {
 
 	public WebDriver initializeDriver()
 	{
-		//System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
