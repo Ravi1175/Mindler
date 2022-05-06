@@ -1,7 +1,6 @@
 package com.graft;
 
 import org.testng.annotations.Test;
-
 import com.graft.base.BaseTest;
 import com.graft.pages.UserRegistration;
 
