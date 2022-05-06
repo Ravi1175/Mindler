@@ -2,24 +2,24 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-04T17:25:15Z" name="Suite" finished-at="2022-05-04T17:25:26Z" duration-ms="10436">
+  <suite started-at="2022-05-06T06:11:25Z" name="Default suite" finished-at="2022-05-06T06:11:31Z" duration-ms="5718">
     <groups>
     </groups>
-    <test started-at="2022-05-04T17:25:15Z" name="Test" finished-at="2022-05-04T17:25:26Z" duration-ms="10436">
+    <test started-at="2022-05-06T06:11:25Z" name="Default test" finished-at="2022-05-06T06:11:31Z" duration-ms="5718">
       <class name="com.graft.AppTest">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:com.graft.AppTest@31add175]" started-at="2022-05-04T22:55:15Z" name="startDriver" finished-at="2022-05-04T22:55:24Z" duration-ms="9376" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:com.graft.AppTest@345f69f3]" started-at="2022-05-06T11:41:25Z" name="startDriver" finished-at="2022-05-06T11:41:29Z" duration-ms="4050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="Register()[pri:0, instance:com.graft.AppTest@31add175]" started-at="2022-05-04T22:55:24Z" name="Register" finished-at="2022-05-04T22:55:25Z" duration-ms="740" status="PASS">
+        <test-method signature="Register()[pri:0, instance:com.graft.AppTest@345f69f3]" started-at="2022-05-06T11:41:29Z" name="Register" finished-at="2022-05-06T11:41:31Z" duration-ms="1271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:com.graft.AppTest@31add175]" started-at="2022-05-04T22:55:25Z" name="stopDriver" finished-at="2022-05-04T22:55:26Z" duration-ms="294" status="PASS">
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:com.graft.AppTest@345f69f3]" started-at="2022-05-06T11:41:31Z" name="stopDriver" finished-at="2022-05-06T11:41:31Z" duration-ms="384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
       </class> <!-- com.graft.AppTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
